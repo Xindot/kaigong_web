@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="https://x-cdn.oss-accelerate.aliyuncs.com/img/kg_work/kaigong_web/img/favicon.ico" />
+  <title>开工科技 KAIGONG</title>
+  <link rel="stylesheet" href="css/index.css?=2">
+</head>
+
+<body>
+  <div id="app">
+    <div class="bg"></div>
+    <div class="header">
+      <img src="https://x-cdn.oss-accelerate.aliyuncs.com/img/kg_work/kaigong_web/img/KG-1000-w.png" alt="">
+      <span class="cn">开工科技</span>
+    </div>
+    <div class="inside">
+      <p class="p-0">开工产品</p>
+      <p class="p-1">工程机械行业服务一站式解决方案</p>
+      <p class="p-2">
+        <button onclick="showModel()">开工网</button>
+        <button onclick="showModel()">开工有活无忧</button>
+        <button onclick="showModel()">开工二手机</button>
+        <button onclick="showModel()">开工招投标</button>
+        <button onclick="showModel()">开工企服</button>
+      </p>
+    </div>
+
+    <div id="model">
+      <div class="bg" onclick="hideModel()"></div>
+      <div class="center">
+        <img src="https://x-cdn.oss-accelerate.aliyuncs.com/img/nran_work/yinpos.com/img/wx-xx.png" alt="">
+      </div>
+    </div>
+
+    <div class="footer">
+      KAIGONG.COM 2017~<span id="year"></span>
+      <a href="https://beian.miit.gov.cn/" target="_blank"></a>
+      © 开工科技
+    </div>
+  </div>
+  <script>
+    document.getElementById('year').innerText = new Date().getFullYear()
+
+    function showModel() {
+      document.getElementById('model').style.display = 'block'
+    }
+
+    function hideModel() {
+      document.getElementById('model').style.display = 'none'
+    }
+  </script>
+</body>
+
+</html>
