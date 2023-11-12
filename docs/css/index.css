@@ -5,8 +5,18 @@
       padding: 0;
     }
 
+    @font-face {
+      font-family: "DingTalk_JinBuTi";
+      src: url("https://x-cdn.oss-accelerate.aliyuncs.com/fonts/dingtalk/DingTalk_JinBuTi.ttf");
+    }
+
+    .DingTalk-JinBuTi {
+      font-family: "DingTalk_JinBuTi";
+    }
+
     body {
       background-color: #333;
+      font-family: "DingTalk_JinBuTi";
     }
 
     #app > .bg {
@@ -97,7 +107,7 @@
       opacity: .7;
       letter-spacing: 5px;
       font-weight: lighter;
-      -webkit-text-stroke: 1px #f6ca9d;
+      /* -webkit-text-stroke: 1px #f6ca9d; */
     }
 
     #app > .inside > .p-2 {
@@ -115,6 +125,7 @@
       letter-spacing: 5px;
       margin-right: 20px;
       margin-bottom: 20px;
+      font-family: inherit;
     }
 
     #model {
