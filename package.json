@@ -1,5 +1,5 @@
 {
-  "name": "yinpos-web",
+  "name": "kaigong-web",
   "version": "1.0.0",
   "description": "A Html Project",
   "author": "",
@@ -7,6 +7,8 @@
   "private": true,
   "scripts": {
     "dev": "cd docs && anywhere -s -p 8081",
-    "gitPush": "git status && git add -A && git status && git commit -am 'gx' && git status && git push origin master && git status"
+    "gitPushGitee": "git status && git add -A && git status && git commit -am 'gx' && git status && git push origin master && git status",
+    "gitPushGitHub": "git status && git add -A && git status && git commit -am 'gx' && git status && git push github master && git status",
+    "gitPush": "npm run gitPushGitee && npm run gitPushGitHub"
   }
 }
