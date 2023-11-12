@@ -7,8 +7,8 @@
   "private": true,
   "scripts": {
     "dev": "cd docs && anywhere -s -p 8081",
-    "gitPushGitee": "git status && git add -A && git status && git commit -am 'gx' && git status && git push origin master && git status",
-    "gitPushGitHub": "git status && git add -A && git status && git commit -am 'gx' && git status && git push github master && git status",
+    "gitPushGitee": "git status && git add -A && git status && git commit -am 'gx' && git status && git push origin main && git status",
+    "gitPushGitHub": "git status && git add -A && git status && git commit -am 'gx' && git status && git push github main && git status",
     "gitPush": "npm run gitPushGitee && npm run gitPushGitHub"
   }
 }
